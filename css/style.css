@@ -489,6 +489,16 @@ pre {
   margin-right: -15px;
   margin-left: -15px; }
 
+  .TeamRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px; }
+  
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0; }
@@ -537,7 +547,8 @@ pre {
   max-width: 16.66667%; }
 
 .col-3 {
-  -webkit-box-flex: 0;
+  margin-left: auto;
+  margin-right: auto;
   -ms-flex: 0 0 25%;
   flex: 0 0 25%;
   max-width: 25%; }
@@ -729,7 +740,8 @@ pre {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
   .col-sm-3 {
-    -webkit-box-flex: 0;
+    margin-left: auto;
+    margin-right: auto;
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%; }
@@ -888,7 +900,8 @@ pre {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
   .col-md-3 {
-    -webkit-box-flex: 0;
+    margin-left: auto;
+    margin-right: auto;
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%; }
@@ -1022,6 +1035,21 @@ pre {
   .offset-md-11 {
     margin-left: 91.66667%; } }
 
+  
+@media (min-width: 300px) {
+  .centerReikiStaff {
+    /* -webkit-box-flex: 0; */
+    margin-left: auto;
+    margin-right: auto;
+    /* -ms-flex: 0 0 25%; */
+    flex: 0 0 25%;
+    padding-right: -10%;
+    padding-left: -10%;
+    width: 100%; 
+  }
+
+}
+
 @media (min-width: 992px) {
   .col-lg {
     -ms-flex-preferred-size: 0;
@@ -1048,9 +1076,12 @@ pre {
     max-width: 16.66667%; }
   .col-lg-3 {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 25%;
+    margin-left: auto;
+    margin-right: auto;
+    /* -ms-flex: 0 0 25%; */
     flex: 0 0 25%;
-    max-width: 25%; }
+    /* max-width: 25%;  */
+  }
   .col-lg-4 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33.33333%;
@@ -1206,7 +1237,8 @@ pre {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
   .col-xl-3 {
-    -webkit-box-flex: 0;
+    margin-left: auto;
+    margin-right: auto;
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%; }
@@ -7903,35 +7935,38 @@ h1, h2, h3, h4, h5,
 .appointment-form textarea.form-control {
   height: inherit !important; }
 
-.staff {
+.reikiStaff {
   padding: 25px;
   background: #fff;
-  -webkit-border-radius: 4px;
+  /* -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
+  -ms-border-radius: 4px; */
   border-radius: 4px;
-  -moz-transition: all 0.3s ease;
+  /* -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease; } */
+}
   @media (max-width: 767.98px) {
-    .staff {
+    .reikiStaff {
       margin-bottom: 30px; } }
-  .staff .info {
+      
+      /* Info Test in the box */
+  .reikiStaff .info {
     width: 100%; }
-    .staff .info h3 {
+    .reikiStaff .info h3 {
       font-size: 15px;
       text-transform: uppercase; }
-      .staff .info h3 a {
+      .reikiStaff .info h3 a {
         color: #000; }
-    .staff .info span.position {
+    .reikiStaff .info span.position {
       display: block;
       margin-bottom: 15px;
       font-size: 12px;
       font-weight: 400;
       color: #cccccc; }
-  .staff .img {
+  .reikiStaff .img {
     width: 110px;
     height: 110px;
     border: 1px solid #f0f0f0;
@@ -7945,11 +7980,11 @@ h1, h2, h3, h4, h5,
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-  .staff:hover, .staff:focus {
+  .reikiStaff:hover, .reikiStaff:focus {
     -webkit-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2); }
-    .staff:hover .img, .staff:focus .img {
+    .reikiStaff:hover .img, .reikiStaff:focus .img {
       border: 1px solid #28a745; }
 
 .ftco-discount {
